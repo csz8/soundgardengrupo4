@@ -8,15 +8,26 @@ sectionIndex.innerHTML = `
 
 <div class="modal">
 
-<header>
-<h2>Reserva de Ingresso</h2>
-<span class="fechar-modal">X</span>
-</header>
+        <header>
+            <h2>Reserva de Ingresso</h2>
+            <span class="fechar-modal">x</span>
+        </header>
 
-<div class="corpo-modal">
-<form>
+        <div class="corpo-modal">
+            <form action="">
 
+                <label for="name">Nome Completo</label><br>
+                <input type="text" id="nome-modal" name="nome-modal" placeholder="digite seu nome aqui"><br>
 
-</div>
+                <label for="mail">E-mail</label><br>
+                <input type="email" id="email-modal" name="email-modal" placeholder="digite seu e-mail aqui"><br>
+
+                <input type="submit" id="confirmar-reserva" value="Reservar Agora">
+
+            </form>
+
+            <p>Ao clicar no botão você confirmará sua reserva para o evento.</p>
+
+        </div>
 
 `;
