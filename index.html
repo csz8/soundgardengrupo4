@@ -63,7 +63,7 @@
             <div class="container text-center ">
                 <h2>Próximos eventos</h2>
             </div>
-            <div class="container d-flex justify-content-center align-items-center events">
+            <div class="container d-flex justify-content-center align-items-center events" id="home-eventos">
                 <article class="evento card p-5 m-3">
                     <h2>nome do evento - 05/03/2022</h2>
                     <h4>Arctic Monkeys, The Kooks, Hiatus Kaiyote</h4>
@@ -126,18 +126,30 @@
             <div class="modal">
                 <h2>Reserva de Ingresso</h2>
                 <p>Por favor, preencha seus dados abaixo</p>
+                <br>
                 <form>
-
-                    <label for="name">Nome Completo</label><br>
-                    <input type="text" id="nome-modal" name="nome-modal" placeholder="digite seu nome aqui"><br>
-
-                    <label for="mail">E-mail</label><br>
-                    <input type="email" id="email-modal" name="email-modal" placeholder="digite seu e-mail aqui"><br>
-
-                    <input type="submit" id="confirmar-reserva" value="Reservar Agora">
-
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <br>
+                        <input type="text" class="input-modal" id="nome-modal" name="nome-modal"
+                            placeholder="digite seu nome aqui">
+                        <br>
+                        <br>
+                        <label for="nome">E-mail</label><br>
+                        <input type="text" class="input-modal" id="email-modal" name="email-modal"
+                            placeholder="digite seu e-mail aqui">
+                        <br>
+                        <br>
+                        <label for="nome">Número de Ingressos</label><br>
+                        <input type="text" class="input-modal" id="ingressos-modal" name="ingressos-modal"
+                            placeholder="digite quantos ingressos deseja agendar"><br>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn-modal" id="confirmar-reserva">Reservar Agora</button>
+                    <button type="cancel" class="btn-modal" id="cancelar-reserva">Cancelar</button>
                 </form>
-                <small>Ao clicar no botão você confirmará sua reserva para o evento.</small>
             </div>
         </section>
     </main>

@@ -105,19 +105,57 @@ footer nav ul li a {
 .modal {
   color: #fff;
   position: fixed;
-  z-index: 1;
+  z-index: 0;
+  opacity: 0;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: #000;
+  background-color: #c2185b;
   margin: 15% auto;
   padding: 20px;
   border-radius: 5px;
   width: 70%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
+
+.modal-ativar {
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #c2185b;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.input-modal {
+  width: 300px;
+}
+
+.btn-modal {
+  color: #c2185b;
+  width: 150px;
+  font-weight: bold;
+}
+
+#home-eventos {
+display: flex;
+justify-content: center;
+align-items: center;
+}  
