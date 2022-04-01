@@ -1,3 +1,5 @@
+//CODE CSZ
+//Listar Eventos
 const BASE_URL = "https://xp41-soundgarden-api.herokuapp.com";
 const eventos = document.querySelector("tbody");
 const metodo = {
@@ -27,3 +29,4 @@ const listarEventos = async () => {
 };
 
 listarEventos();
+

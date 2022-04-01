@@ -105,18 +105,18 @@ footer nav ul li a {
 .modal {
   color: #fff;
   position: fixed;
+  align-self: center;
   z-index: 0;
   opacity: 0;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   overflow: auto;
   background-color: #c2185b;
-  margin: 15% auto;
+  margin: 5% 10%;
   padding: 20px;
   border-radius: 5px;
-  width: 70%;
+  width: 80%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,18 +126,18 @@ footer nav ul li a {
 .modal-ativar {
   color: #fff;
   position: fixed;
+  align-self: center;
   z-index: 1;
   opacity: 1;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
   overflow: auto;
   background-color: #c2185b;
-  margin: 15% auto;
+  margin: 5% 10%;
   padding: 20px;
   border-radius: 5px;
-  width: 70%;
+  width: 80%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -165,3 +165,7 @@ align-items: center;
   justify-content: center;
   align-items: center;
   }  
+
+#pid {
+  display: none;
+}
