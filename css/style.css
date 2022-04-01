@@ -159,3 +159,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 }  
+
+#eventos-eventos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }  
