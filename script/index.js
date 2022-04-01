@@ -1,50 +1,24 @@
-const sectionIndex = document.querySelector(".container.text-center");
+//Incluir html com o código do modal
+
+const sectionIndex = document.querySelector("main");
 console.log(sectionIndex);
 
-sectionIndex.innerHTML = `
-<div class="container text-center ">
-<h2>Próximos eventos</h2>
+atualizaIndex => {
+    sectionIndex.innerHTML += `<div class="modal">
+<div class="modal-topo">
+    <h2>Reserva de Ingresso</h2>
+    <span class="fechar-modal">x</span>
 </div>
-
-<div class="modal">
-
-        <header>
-            <h2>Reserva de Ingresso</h2>
-            <span class="fechar-modal">x</span>
-        </header>
-
-        <div class="corpo-modal">
-            <form action="">
-
-                <label for="name">Nome Completo</label><br>
-                <input type="text" id="nome-modal" name="nome-modal" placeholder="digite seu nome aqui"><br>
-
-                <label for="mail">E-mail</label><br>
-                <input type="email" id="email-modal" name="email-modal" placeholder="digite seu e-mail aqui"><br>
-
-                <input type="submit" id="confirmar-reserva" value="Reservar Agora">
-
-            </form>
-
-            <p>Ao clicar no botão você confirmará sua reserva para o evento.</p>
-
-        </div>
-    </div>
-`;
+<div class="modal-corpo">
+    <form action="">
+        <label for="name">Nome Completo</label><br>
+        <input type="text" id="nome-modal" name="nome-modal" placeholder="digite seu nome aqui"><br>
+        <label for="mail">E-mail</label><br>
+        <input type="email" id="email-modal" name="email-modal" placeholder="digite seu e-mail aqui"><br>
+        <input type="submit" id="confirmar-reserva" value="Reservar Agora">
+    </form>
+    <p>Ao clicar no botão você confirmará sua reserva para o evento.</p>
+</div>
+</div>`;
+}
 console.log(sectionIndex);
-
-const botaoModal = document.querySelectorAll(".btn.btn-primary");
-console.log(botaoModal);
-
-for(const btnModalEl of botaoModal){
-    btnModalEl.addEventListener("click", function(event) {
-    event.preventDefault();
-    console.log("Fui clicado!");
-});
-}
-
-function abreModal() {
-  const modal1 = document.querySelector(".modal");
-  modal1.classList.add("visivel");
-}
-abreModal();

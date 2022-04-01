@@ -1,150 +1,123 @@
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
 body {
-    font-family: 'Questrial', sans-serif;
+  font-family: "Questrial", sans-serif;
 }
 
 .img-responsive {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 header {
-    position: relative;
-    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
-    width: 100%;
-    background-color: #fff;
+  position: relative;
+  box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
+  width: 100%;
+  background-color: #fff;
 }
 
 aside {
-    min-height: 100vh;
+  min-height: 100vh;
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #C2185B;
+.nav-pills .show > .nav-link {
+  background-color: #c2185b;
 }
 
 .btn-primary {
-    background-color: #C2185B;
-    border-color: #C2185B;
+  background-color: #c2185b;
+  border-color: #c2185b;
 }
 
 main.login {
-    width: 400px;
+  width: 400px;
 }
 
 section.full {
-    width: 100%;
-    min-height: 80vh;
-    padding: 50px 0;
+  width: 100%;
+  min-height: 80vh;
+  padding: 50px 0;
 }
 
 article.evento {
-    width: 350px;
+  width: 350px;
 }
 
 footer nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 footer nav ul li {
-    padding: 10px;
+  padding: 10px;
 }
-footer nav ul li a{
-    padding: 10px;
-    text-decoration: none;
-    color: black;
+footer nav ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 @media (max-width: 992px) {
-    .events {
-        flex-direction: column;
-    }
+  .events {
+    flex-direction: column;
+  }
 
-    article.evento {
-        width: 80%;
-        text-align: center;
-    }
+  article.evento {
+    width: 80%;
+    text-align: center;
+  }
 
-    .containerbottom,
-    .bottomtext,
-    .bottom {
-        padding: 0;
-    }
-    
-    .imagebottom {
-        width: 80%;
-    }
+  .containerbottom,
+  .bottomtext,
+  .bottom {
+    padding: 0;
+  }
 
-    .row {
-        flex-direction: column;
+  .imagebottom {
+    width: 80%;
+  }
 
-    }
+  .row {
+    flex-direction: column;
+  }
 
-    footer nav ul {
-        list-style: none;
-    }
-
+  footer nav ul {
+    list-style: none;
+  }
 }
 
 @media (max-width: 576px) {
-    .evento {
-        padding: 0 !important;
-    }
-    .bottomtext {
-        padding: 10%;
-    }
-    .bottomlogo {
-        width: 60%;
-    }
-   
-    footer nav ul {
-        flex-direction: column;
-    }
-  
-    
+  .evento {
+    padding: 0 !important;
+  }
+  .bottomtext {
+    padding: 10%;
+  }
+  .bottomlogo {
+    width: 60%;
+  }
 
+  footer nav ul {
+    flex-direction: column;
+  }
 }
 
-  
-  .modal {
-    position: fixed;
-    z-index: 10;
-    width: 50vw;
-    height: auto;
-    left: 25vw;
-    top: 50vh;
-    background-color: #fff;
-    transform: translateY(-25%);
-    padding: irem;
-    box-shadow: 0px 5px 4px 0px rgb(63 63 63 / 27%);
-    border-radius: 5px;
-    opacity: 0;
-  }
-  
-  .modal.visivel {
-      opacity: 1;
-  }
-  
-  .modal > header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #000;
-  }
-  
-  .modal > corpo-modal {
-    padding: 1em 0;
-  }
-  
-  span.fechar-modal {
-    background-color: #0001;
-    border-radius: 50%;
-    display: flex;
-    width: 1.25em;
-    height: 1.25em;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-  
+.modal {
+  color: #fff;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

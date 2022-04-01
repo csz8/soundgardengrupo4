@@ -8,11 +8,11 @@
     <title>Sound Garden</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
-     
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -22,40 +22,40 @@
     </header>
     <main>
         <section class="full d-flex justify-content-center align-items-center" style="background-color: #e91e63">
-            
+
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                
+
                 <ol class="carousel-indicators">
-                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                  <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
                 </ol>
-              
-               
+
+
                 <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="./img/alok.jpg" alt="Alok">
-                  </div>
-              
-                  <div class="item">
-                    <img src="./img/foofighters.jpg" alt="Foo Fighters">
-                  </div>
-              
-                  <div class="item">
-                    <img src="./img/pablovittar.jpg" alt="Pablo Vittar">
-                  </div>
+                    <div class="item active">
+                        <img src="./img/alok.jpg" alt="Alok">
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/foofighters.jpg" alt="Foo Fighters">
+                    </div>
+
+                    <div class="item">
+                        <img src="./img/pablovittar.jpg" alt="Pablo Vittar">
+                    </div>
                 </div>
-              
-                
+
+
                 <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Anterior</span>
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Anterior</span>
                 </a>
                 <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Próximo</span>
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Próximo</span>
                 </a>
-              </div>
+            </div>
 
         </section>
 
@@ -122,7 +122,24 @@
                 </div>
             </div>
         </section>
+        <section class="my-modal">
+            <div class="modal">
+                <h2>Reserva de Ingresso</h2>
+                <p>Por favor, preencha seus dados abaixo</p>
+                <form>
 
+                    <label for="name">Nome Completo</label><br>
+                    <input type="text" id="nome-modal" name="nome-modal" placeholder="digite seu nome aqui"><br>
+
+                    <label for="mail">E-mail</label><br>
+                    <input type="email" id="email-modal" name="email-modal" placeholder="digite seu e-mail aqui"><br>
+
+                    <input type="submit" id="confirmar-reserva" value="Reservar Agora">
+
+                </form>
+                <small>Ao clicar no botão você confirmará sua reserva para o evento.</small>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="container d-flex justify-content-center align-items-center">
